@@ -10,7 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font: normal 100%/1.3 sans-serif;
 }
 
 *, *::before, *::after {
@@ -19,9 +19,77 @@ html {
 
 img {
   display: block;
-  max-width: 100%;
+  max-width: 100%
 }
 
-card-img {
+.card-img {
   width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .card-img {
+    display: inline-block;
+  }
+
+  .card-body {
+    display: inline-block;
+    width: 75%;
+    padding-left: 1rem;
+  }
+
+  .card {
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .card-img {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .card-body {
+    display: block;
+    width: auto;
+  }
+
+  .card {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .card-img {
+    display: inline-block;
+  }
+
+  .card-body {
+    display: inline-block;
+    width: 75%;
+    padding-left: 1rem;
+  }
+
+  .card {
+    display: inline-block;
+  }
+
 }
